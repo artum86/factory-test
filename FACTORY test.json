@@ -1,0 +1,226 @@
+{
+	
+	"spawns":{
+		"max_alive_bots": 25,
+		"pmc_usec_chance": 100,
+		"usec_type": "pmcBot",
+		"bear_type": "followerBigPipe",
+		"usec_default_enemy": {
+			"DEFAULT_ENEMY_BEAR": true,
+			"DEFAULT_ENEMY_USEC": true,
+			"DEFAULT_ENEMY_SAVAGE": true,
+			"ENEMY_BY_GROUPS_PMC_PLAYERS": true,
+			"ENEMY_BY_GROUPS_SAVAGE_PLAYERS": true
+		},
+		"bear_default_enemy": {
+			"DEFAULT_ENEMY_BEAR": true,
+			"DEFAULT_ENEMY_USEC": true,
+			"DEFAULT_ENEMY_SAVAGE": true,
+			"ENEMY_BY_GROUPS_PMC_PLAYERS": true,
+			"ENEMY_BY_GROUPS_SAVAGE_PLAYERS": true
+		},
+		"showTypeInNickname": false,
+		"chanceSameSideIsHostilePercent": 100,
+
+		
+		"factory4_day":{
+			"map_rules": "AvoidAllPmc",
+			"show_generated_bots":"all",
+			"max_spawn_time": 15,
+			"max_spawn_time_limit_warning":false,
+			"max_bot_per_zone": 50,
+			"allow_other_bot_spawn_with_boss":true,
+			"has_boss":true,
+			"bosses_spawn_location_type":"random",
+			"max_boss":2,
+			"boss_spawn_trying_loop":1,
+			"allow_same_boss_spawn":false,
+			"bosses_also_use_scavs_spawn_locations":true,
+			"bosses_also_use_raiders_spawn_locations":false,
+			"cultists_spawn_count_for_max_boss": false,
+			"cultists_spawn_at_own_locations": false,
+			"boss_settings":[
+				{
+					"name":"bossGluhar",
+					"chance":100,
+					"difficulty":"hard, impossible",
+					"wave_total":1,
+					"wave_spawn_time_for_each_min":0,
+					"wave_spawn_time_for_each_max":0,
+					"wave_spawn_all_same_location":false,
+					"spawn_locations":{
+					},
+					"trigger_id":"",
+					"trigger_name":"",
+					"supports":[
+						{
+							"BossEscortType":"followerGluharAssault",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerGluharAssault",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerGluharScout",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerGluharSecurity",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":0,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerGluharSecurity",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":0,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerGluharSnipe",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":0,
+							"BossEscortAmount_max":1
+						}
+					],
+					"random_time_spawn": false
+				},
+                {
+					"name":"bossBully",
+					"chance":100,
+					"difficulty":"hard, impossible",
+					"wave_total":1,
+					"wave_spawn_time_for_each_min":0,
+					"wave_spawn_time_for_each_max":0,
+					"wave_spawn_all_same_location":false,
+					"spawn_locations":{
+					},
+					"trigger_id":"",
+					"trigger_name":"",
+					"supports":[
+						{
+							"BossEscortType":"followerBully",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerBully",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerBully",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":1,
+							"BossEscortAmount_max":1
+						},
+						{
+							"BossEscortType":"followerBully",
+							"BossEscortDifficult":[
+								"normal, hard"
+							],
+							"BossEscortAmount_min":0,
+							"BossEscortAmount_max":1
+						}
+					],
+					"random_time_spawn": false
+				}
+			],
+			"wave_settings":{
+				"scav_waves":{
+					"wave_total":0,
+					"slot_min":1,
+					"slot_max":4,
+					"insta_spawn_waves":0,
+					"spawn_time_delay_after_insta_wave": 0,
+					"spawn_time_delay_for_each_min": 0,
+					"spawn_time_delay_for_each_max": 10,
+					"spawn_time_delay_accumulate_for_each_zone": false,
+					"spawn_location_type": "together",
+					"difficulty":{
+						"easy":0,
+						"normal":4,
+						"hard":6,
+						"impossible":1
+					},
+					"spawn_locations":{
+						"BotZone":1
+					}
+				},
+                "raider_waves":{
+					"raider_default_role":"pmcBot",
+					"raider_high_role":true,
+					"raider_high_role_chance":22,
+					"raider_high_role_list":"followerBully, followerGluharAssault, followerGluharScout, followerGluharSecurity, followerGluharSnipe, followerKojaniy, followerSanitar",
+					"wave_total":0,
+					"slot_min":0,
+					"slot_max":2,
+					"insta_spawn_waves":1,
+					"spawn_time_delay_after_insta_wave": 0,
+					"spawn_time_delay_for_each_min": 0,
+					"spawn_time_delay_for_each_max": 10,
+					"spawn_time_delay_accumulate_for_each_zone": false,
+					"spawn_location_type": "together",
+					"difficulty":{
+						"easy":0,
+						"normal":1,
+						"hard":6,
+						"impossible":4
+					},
+					"spawn_locations":{
+						"BotZone":1
+					}
+				},
+				"pmc_waves":{
+					"cursedAssault_chance":33,
+					"wave_total":0,
+					"slot_min":1,
+					"slot_max":4,
+					"insta_spawn_waves":0,
+					"spawn_scav_raider_location_chance": 22,
+					"spawn_time_delay_after_insta_wave": 0,
+					"spawn_time_delay_for_each_min": 0,
+					"spawn_time_delay_for_each_max": 10,
+					"spawn_time_delay_accumulate_for_each_zone": false,
+					"spawn_location_type": "together",
+					"difficulty":{
+						"easy":0,
+						"normal":0,
+						"hard":3,
+						"impossible":6
+					},
+					"spawn_locations":{
+						"BotZone":1
+					}
+				}
+			}
+		}
+	}
+}
