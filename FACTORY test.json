@@ -2,7 +2,7 @@
 	
 	"spawns":{
 		"max_alive_bots": 25,
-		"pmc_usec_chance": 100,
+		"pmc_usec_chance": 50,
 		"usec_type": "pmcBot",
 		"bear_type": "followerBigPipe",
 		"usec_default_enemy": {
@@ -28,7 +28,7 @@
 			"show_generated_bots":"all",
 			"max_spawn_time": 15,
 			"max_spawn_time_limit_warning":false,
-			"max_bot_per_zone": 50,
+			"max_bot_per_zone": 25,
 			"allow_other_bot_spawn_with_boss":true,
 			"has_boss":true,
 			"bosses_spawn_location_type":"random",
